@@ -2,6 +2,7 @@ import discord
 import asyncio
 
 client = discord.Client()
+token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
 async def on_ready():
@@ -13,4 +14,4 @@ async def on_message(message):
 			text = ("$natural " + message.content + "m send 時間になりました、お疲れさまでした！ to " + message.author.mention)
 			await message.channel.send("リマインダーを設定しました\n" + text)
 
-client.run('NzQ1NTkzMjI2NDEyNjg3NDcw.Xz0BzQ.R__DoMTrPv8dkwJPN3WwgqPTlbc')
+client.run('token')
