@@ -1,1 +1,1 @@
-discordbot: python densyobato.py
+discordbot: python discordbot.py
